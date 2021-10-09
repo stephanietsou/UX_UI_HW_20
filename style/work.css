@@ -78,8 +78,10 @@ body {
 /* breadcrumb */
 .breadcrumb {
     /* border: 2px solid red; */
+    font-family: Graphik, sans-serif;
     background-color: transparent;
-    margin-top: 2vh;
+    margin-top: 5vh;
+    margin-bottom: 2vh;
     padding-left: 5vw;
 }
 
@@ -107,6 +109,13 @@ body {
     justify-content: center; */
   }
 
+  .second {
+      background-image: url(../images/puppylovecover.png);
+  }
+
+  .second h1 {
+    color: rgb(232, 140, 157);
+  }
 
 section {
     width: 90vw;
