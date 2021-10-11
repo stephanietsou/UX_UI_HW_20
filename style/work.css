@@ -96,26 +96,85 @@ body {
     position: fixed;
 } */ 
 
+.jumbotron {
+    padding: 3vh 5vw;
+    height: max-content;
+    color: #fff;
+    width: 100vw;
+    height: auto;
+}
+.first h1 {
+    color: #0464ff;
+}
+
+.first::after {
+    content: "";
+    background-color: #1551B1;
+    background-image: linear-gradient(to right, #1551b1, #f4f4f4);
+    display:block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 0;
+}
+
 .first {
-    /* position: absolute; */
-    z-index: 1;
+    position: relative;
     background-image: url(../images/cspcover.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.first > * {
+    z-index: 10;
+    position: relative;
+}
+
+/* .first { */
+    /* position: absolute; */
+    /* z-index: 1;
+    background-image: url(../images/cspcover.png);
+    background-size: cover;
+    background-repeat: no-repeat; */
     /* height: 500px;
     height: calc(100vh - 25px);
     display:flex;
     align-items: center;
     justify-content: center; */
-  }
+  /* } */
 
-  .second {
-      background-image: url(../images/puppylovecover.png);
-  }
+  .second::after {
+    content: "";
+    background-color: rgb(185, 125, 135);
+    background-image: linear-gradient(to right, rgb(185, 125, 135), rgb(254, 231, 235));
+    display:block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0.5;
+    z-index: 0;
+}
 
-  .second h1 {
-    color: rgb(232, 140, 157);
-  }
+.second {
+    position: relative;
+    background-image: url(../images/puppylovecover.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.second > * {
+    z-index: 10;
+    position: relative;
+}
+
+.second h1 {
+    color:rgb(251, 117, 139);
+}
 
 section {
     width: 90vw;
